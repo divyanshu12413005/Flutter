@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'button_screen.dart';
 import 'form_screen.dart';
 import 'image_screen.dart';
+import 'navigation_screen.dart';
 import 'text_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -77,6 +78,18 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: const Text('Open Form Examples'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const NavigationScreen(),
+                  ),
+                );
+              },
+              child: const Text('Open Navigation Examples'),
             ),
             const SizedBox(height: 24),
             const Text(

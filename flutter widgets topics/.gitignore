@@ -33,6 +33,17 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# Android/Gradle generated files
+**/.gradle/
+**/.kotlin/
+**/local.properties
+
+# Flutter generated native files
+**/Flutter/ephemeral/
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_export_environment.sh
+**/flutter/ephemeral/
+
 # Symbolication related
 app.*.symbols
 
